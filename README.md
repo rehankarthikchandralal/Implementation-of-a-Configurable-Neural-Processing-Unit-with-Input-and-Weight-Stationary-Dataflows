@@ -21,8 +21,7 @@ This research project focused on designing a Neural Processing Unit (NPU) that p
 
 
 
-
-Project Report is available in /docs
+```Project Report is available in /docs```
 ---
 
 
