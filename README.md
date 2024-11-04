@@ -18,6 +18,10 @@ This research project focused on designing a Neural Processing Unit (NPU) that p
 - **Evaluation and Documentation**:
     - **Performance Evaluation**: Assess the NPU in terms of execution time, resource utilization, and power consumption across different types of convolutional layers and configurations for both dataflow models.
     - **Documentation**: Record the implementation process, experimental setup, and results in a comprehensive project report.
+
+
+
+
 Project Report is available in /docs
 ---
 
