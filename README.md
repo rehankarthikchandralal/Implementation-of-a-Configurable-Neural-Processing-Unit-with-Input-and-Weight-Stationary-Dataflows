@@ -1,31 +1,25 @@
-## Research Project: Energy-Efficient NPU Design
+## Research Project: Implementation-of-a-Configurable-Neural-Processing-Unit-with-Input-and-Weight-Stationary-Dataflows
 
 ### Overview
 This research project focused on designing a Neural Processing Unit (NPU) that prioritizes energy efficiency and resource utilization. To achieve this, the NPU was designed to support two distinct dataflow models: input-stationary and weight-stationary.
 
-### Key Implementations
+## Project Objectives
 
-1. **Verilog-Based NPU Design:**
-   * A comprehensive NPU architecture was designed using Verilog HDL.
-   * The NPU incorporates a systolic array of Processing Elements (PEs), each capable of performing a Multiply-Accumulate (MAC) operation.
-   * A flexible interconnect was developed to seamlessly switch between input- and weight-stationary dataflows.
-   * A control unit was implemented to orchestrate data transfer between the PE array and data buffers, optimizing resource usage.
+- **Study and Review**: 
+    - Conduct an in-depth analysis of state-of-the-art approaches related to flexible dataflow implementations for Neural Processing Units (NPUs).
 
-2. **Functional Verification and Synthesis:**
-   * Rigorous testbenches were developed to validate the NPU's functionality.
-   * Synthesis was performed to estimate resource utilization and performance metrics.
-   * The NPU was interfaced with a Processing System (PS) using the AXI protocol.
+- **NPU Implementation**:
+    - Develop a **configurable dataflow NPU** with support for both input- and weight-stationary dataflow models.
+    - Key components of the implementation include:
+      - **PE Array Design**: Implement an array of Processing Elements (PEs), where each PE performs a Multiply-Accumulate (MAC) operation. The PE array design may be based on a systolic array architecture.
+      - **Configurable Interconnect**: Design a flexible interconnection between NPU buffers and the PE array, facilitating both input- and weight-stationary dataflows.
+      - **Control Unit**: Implement a control unit that manages data transfer between data buffers and the PE array, adapting to the chosen dataflow model.
 
-3. **FPGA Implementation:**
-   * A bitstream was generated and deployed onto a Xilinx ZCU104 MPSoC platform.
-   * The FPGA implementation allowed for real-world evaluation of the NPU's performance and energy efficiency.
+- **Evaluation and Documentation**:
+    - **Performance Evaluation**: Assess the NPU in terms of execution time, resource utilization, and power consumption across different types of convolutional layers and configurations for both dataflow models.
+    - **Documentation**: Record the implementation process, experimental setup, and results in a comprehensive project report.
+Project Report is available in /docs
+---
 
-### Contributions
-This research project has made significant contributions to the field of energy-efficient NPU design by:
 
-* **Enhanced Dataflow Flexibility:** The ability to switch between input- and weight-stationary dataflows enables optimized resource utilization and power consumption based on specific application requirements.
-* **Efficient Hardware Implementation:** The systolic array architecture and flexible interconnect design contribute to a highly efficient hardware implementation.
-* **Rigorous Verification and Validation:** Comprehensive testbenches and synthesis results ensure the correctness and feasibility of the NPU design.
-* **Real-World Evaluation:** FPGA implementation provides a platform for real-world testing and optimization.
 
-This research has the potential to advance the development of low-power, high-performance AI accelerators, paving the way for more energy-efficient AI applications.
