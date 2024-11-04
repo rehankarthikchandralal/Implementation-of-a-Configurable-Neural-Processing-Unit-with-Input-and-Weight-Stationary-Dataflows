@@ -19,7 +19,19 @@ This research project focused on designing a Neural Processing Unit (NPU) that p
     - **Performance Evaluation**: Assess the NPU in terms of execution time, resource utilization, and power consumption across different types of convolutional layers and configurations for both dataflow models.
     - **Documentation**: Record the implementation process, experimental setup, and results in a comprehensive project report.
 
+## Workflow Overview
 
+- **Verilog Design**: Developed a Neural Processing Unit (NPU) that supports two types of dataflows to enhance data reuse, aiming to reduce power consumption and resource utilization.
+  - **Systolic Array of PEs**: Implemented an array of Processing Elements (PEs) in a systolic architecture, with each PE performing a Multiply-Accumulate (MAC) operation.
+  - **Configurable Interconnect**: Designed a flexible interconnect between NPU buffers and the PE array to support both input-stationary and weight-stationary dataflow models.
+  - **Control Unit**: Created a control unit to manage data transfers between the PE array and data buffers based on the chosen dataflow model.
+
+- **Verification and Synthesis**:
+  - Verified functionality through testbenches.
+  - Performed synthesis and utilized the AXI protocol for interfacing between Processing System (PS) and Programmable Logic (PL).
+
+- **FPGA Implementation**:
+  - Generated a bitstream and implemented the design on an FPGA (Xilinx ZCU104 MPSoC Platform).
 
 ```Project Report is available in /docs```
 ---
