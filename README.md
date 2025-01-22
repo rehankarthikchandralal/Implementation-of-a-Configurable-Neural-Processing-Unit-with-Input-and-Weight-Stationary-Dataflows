@@ -33,7 +33,7 @@ This research project focused on designing a Neural Processing Unit (NPU) that p
 - **FPGA Implementation**:
   - Generated a bitstream and implemented the design on an FPGA (Xilinx ZCU104 MPSoC Platform).
 
-```Project Report is available in /docs```
+
 ---
 
 
